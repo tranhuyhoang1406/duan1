@@ -1,0 +1,18 @@
+<div class="mt4">
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Son Dang
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/courses/create">Đăng khóa học</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+</div>
+{{#each course}}
+<h1>{{this.name}}</h1>
+<h2>{{this.description}}</h2>
+<a href="/courses/{{this.slug}}"><img src="{{this.image}}" alt="Messi.img"></a>
+
+{{/each}}
